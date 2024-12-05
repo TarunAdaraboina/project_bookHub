@@ -1,0 +1,158 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f7fa;
+  width: 100%;
+  padding: 20px;
+}
+
+.home-content-container {
+  background-color: #f5f7fa;
+}
+
+.home-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #1e293b;
+  margin-bottom: 0px;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.link-items {
+  text-decoration: none;
+  color: inherit;
+}
+
+.findbooks-button,
+.findbooks-button-desktop {
+  background-color: #0b69ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.findbooks-button:hover,
+.findbooks-button-desktop:hover {
+  background-color: #0353e9;
+}
+
+/* Top Rated Books Section */
+.top-rated-books-container {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.books-shelves-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-rated-books-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e293b;
+  margin: 0;
+}
+
+.findbooks-button-desktop {
+  display: none;
+}
+
+.slick-container {
+  width: 80%;
+  max-width: 1100px;
+  margin-top: 10px;
+}
+
+/* Footer styles (optional if Footer component exists separately) */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .home-content-container {
+    text-align: left;
+    max-width: 800px;
+  }
+
+  .home-heading {
+    font-size: 32px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+
+  .books-shelves-container {
+    justify-content: space-between;
+  }
+
+  .findbooks-button {
+    display: none;
+  }
+
+  .findbooks-button-desktop {
+    display: block;
+    margin: 5px 10px 5px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-container {
+    padding: 40px;
+  }
+
+  .home-content-container {
+    width: 100%;
+  }
+
+  .home-heading {
+    font-size: 36px;
+  }
+
+  .paragraph {
+    font-size: 20px;
+  }
+
+  .findbooks-button-desktop {
+    padding: 12px 25px;
+    font-size: 16px;
+    margin: 10px 10px 5px 10px;
+  }
+
+  .top-rated-books-container {
+    margin-top: 50px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}

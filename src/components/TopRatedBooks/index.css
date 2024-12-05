@@ -1,0 +1,86 @@
+.slick-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 90vw; /* Default width for mobile */
+  padding: 10px;
+  margin: 10px;
+}
+
+.link-items {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.top-rated-books-title {
+  font-size: 10px;
+  line-height: 14px;
+  margin: 5px;
+}
+
+.top-rated-books-author {
+  font-size: 8px;
+  line-height: 12px;
+}
+
+@media (min-width: 481px) {
+  .slick-item {
+    width: 80vw;
+    padding: 12px;
+  }
+
+  .logo-image {
+    width: 120px;
+    height: auto;
+  }
+
+  .top-rated-books-title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .top-rated-books-author {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: 769px) {
+  .slick-item {
+    width: 30vw;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+
+  .logo-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .top-rated-books-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .top-rated-books-author {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}

@@ -1,0 +1,156 @@
+/* Mobile-first approach */
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  height: 5vh;
+}
+
+.nav-content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-icon {
+  width: 92px;
+  height: 24px;
+  opacity: 1; /* Ensure the header icon is visible */
+  display: block;
+}
+
+.navbar-description-container {
+  display: none;
+}
+
+.ul-container {
+  display: none; /* Initially hide the ul list on mobile */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.li-items {
+  margin: 15px;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+}
+
+.link-items {
+  text-decoration: none;
+  color: inherit;
+}
+
+.desktop-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: block; /* Show the hamburger icon on mobile */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hamburger-icon,
+.close-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: transparent;
+  padding: 10px;
+  margin: 0 20px;
+  max-width: 350px;
+  top: 60px;
+}
+
+.menu-content-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.li-items {
+  margin: 0 10px;
+}
+
+.logout-button-mobile {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-icon-mobile {
+  font-size: 30px;
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Large screen adjustments (above 768px) */
+@media screen and (min-width: 768px) {
+  .navbar-container {
+    height: 8vh;
+    justify-content: space-between;
+  }
+
+  .navbar-description-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .ul-container {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .li-items {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .desktop-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
